@@ -49,34 +49,36 @@
 	  </nav>
     <!-- END nav -->
 
+    <div id="snackbar">You have successfully been added to the whitelist</div>
+
     <section class="ftco-section contact-section ftco-degree-bg">
       <div class="container">
         <div class="row d-flex mb-5 contact-info">
           <div class="col-md-12 mb-4">
-            <h2 class="h4">Sign Up to get whitelisted for the STO</h2>
+            <h2 class="h4" style="margin-top: 40px;">Sign Up to get whitelisted for the STO</h2>
           </div>
           <div class="w-100"></div>
         </div>
         <div class="row block-9">
           <div class="col-md-6 pr-md-5">
-            <form action="#">
+            <form id="signUpForm">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="First Name" id="firstName" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Last Name">
+                <input type="text" class="form-control" placeholder="Last Name" id="lastName" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email Address">
+                <input type="text" class="form-control" placeholder="Email Address" id="emailAddress" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Preferred Wallet Address">
+                <input type="text" class="form-control" placeholder="Preferred Wallet Address" id="walletAddress" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Country of Origin">
+                <input type="text" class="form-control" placeholder="Country of Origin" id="country" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Id Number/Business Reg. Number">
+                <input type="text" class="form-control" placeholder="Id Number/Business Reg. Number" id="idNumber" required>
               </div>
               <div class="form-group">
                 <input type="submit" value="Confirm and SignUp" class="btn btn-primary py-3 px-5">
@@ -182,6 +184,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/signup.js"></script>
     
   </body>
 </html>
